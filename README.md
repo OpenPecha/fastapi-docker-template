@@ -136,3 +136,4 @@ For more information:
 ## Terms of use
 
 _Project Name_ is licensed under the [MIT License](/LICENSE.md).
+
