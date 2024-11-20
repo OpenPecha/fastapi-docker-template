@@ -9,17 +9,19 @@
 </h1>
 
 ## _Project Name_
+
 _The project name should match its code's capability so that new users can easily understand what it does._
 
 ## Owner(s)
 
 _Change to the owner(s) of the new repo. (This template's owners are:)_
+
 - [@ngawangtrinley](https://github.com/ngawangtrinley)
 - [@mikkokotila](https://github.com/mikkokotila)
 - [@evanyerburgh](https://github.com/evanyerburgh)
 
-
 ## Table of contents
+
 <p align="center">
   <a href="#project-description">Project description</a> •
   <a href="#who-this-project-is-for">Who this project is for</a> •
@@ -33,53 +35,42 @@ _Change to the owner(s) of the new repo. (This template's owners are:)_
 <hr>
 
 ## Project description
+
 _Use one of these:_
 
 With _Project Name_ you can _verb_ _noun_...
 
 _Project Name_ helps you _verb_ _noun_...
 
-
 ## Who this project is for
+
 This project is intended for _target user_ who wants to _user objective_.
 
-
 ## Project dependencies
-Before using _Project Name_, ensure you have:
-* _Prerequisite 1_
-* _Prerequisite 2_
-* _Prerequisite 3..._
 
+- [Docker](https://www.docker.com/).
+- [uv](https://docs.astral.sh/uv/) for Python package and environment management.
 
 ## Instructions for use
+
 Get started with _Project Name_ by _(write the first step a user needs to start using the project. Use a verb to start.)_.
 
-
-### Install _Project Name_
-1. _Write the step here._ 
-
-    _Explanatory text here_ 
-    
-    _(Optional: Include a code sample or screenshot that helps your users complete this step.)_
-
-2. _Write the step here._
- 
-    a. _Substep 1_ 
-    
-    b. _Substep 2_
-
-
 ### Configure _Project Name_
-1. _Write the step here._
-2. _Write the step here._
 
+- create a `.env` file in the root directory of the project. Use the `.env.example` file as a template.
 
-### Run _Project Name_
-1. _Write the step here._
-2. _Write the step here._
+```bash
+cp .env.example .env
+```
 
+### Install and Run _Project Name_
+
+```bash
+docker-compose up -d
+```
 
 ### Troubleshoot _Project Name_
+
 1. _Write the step here._
 2. _Write the step here._
 
@@ -118,31 +109,30 @@ Get started with _Project Name_ by _(write the first step a user needs to start 
   </tr>
 </table>
 
-
 Other troubleshooting supports:
-* _Link to FAQs_
-* _Link to runbooks_
-* _Link to other relevant support information_
 
+- _Link to FAQs_
+- _Link to runbooks_
+- _Link to other relevant support information_
 
 ## Contributing guidelines
+
 If you'd like to help out, check out our [contributing guidelines](/CONTRIBUTING.md).
 
-
 ## Additional documentation
+
 _Include links and brief descriptions to additional documentation._
 
 For more information:
-* [Reference link 1](#)
-* [Reference link 2](#)
-* [Reference link 3](#)
 
+- [For development](/development.md)
 
 ## How to get help
-* File an issue.
-* Email us at openpecha[at]gmail.com.
-* Join our [discord](https://discord.com/invite/7GFpPFSTeA).
 
+- File an issue.
+- Email us at openpecha[at]gmail.com.
+- Join our [discord](https://discord.com/invite/7GFpPFSTeA).
 
 ## Terms of use
+
 _Project Name_ is licensed under the [MIT License](/LICENSE.md).
