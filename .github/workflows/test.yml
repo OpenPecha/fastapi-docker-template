@@ -28,9 +28,13 @@ jobs:
       - run: docker compose down -v --remove-orphans
       - run: docker compose up -d db mailcatcher
       - name: Migrate DB
-        run: source .env && uv run bash scripts/prestart.sh
+        run: |
+          export $(grep -v '^#' .env | xargs)
+          uv run bash scripts/prestart.sh
       - name: Run tests
-        run: source .env && uv run bash scripts/tests-start.sh "Coverage for ${{ github.sha }}"
+        run: |
+          export $(grep -v '^#' .env | xargs)
+          uv run bash scripts/tests-start.sh "Coverage for ${{ github.sha }}"
       - run: docker compose down -v --remove-orphans
       - name: Store coverage files
         uses: actions/upload-artifact@v4
